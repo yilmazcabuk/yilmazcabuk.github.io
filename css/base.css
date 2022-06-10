@@ -317,7 +317,6 @@ body {
   font-weight: normal;
   line-height: 1;
   word-wrap: break-word;
-  -moz-font-smoothing: grayscale;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
@@ -446,7 +445,6 @@ textarea {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
 }
 
@@ -520,21 +518,18 @@ textarea {
 .align-center {
   margin: auto;
   -webkit-align-self: center;
-  -ms-flex-item-align: center;
   align-self: center;
 }
 
 .align-left {
   margin-right: auto;
   -webkit-align-self: center;
-  -ms-flex-item-align: center;
   align-self: center;
 }
 
 .align-right {
   margin-left: auto;
   -webkit-align-self: center;
-  -ms-flex-item-align: center;
   align-self: center;
 }
 
@@ -553,19 +548,16 @@ textarea {
 
 .align-y-center {
   -webkit-align-self: center;
-  -ms-flex-item-align: center;
   align-self: center;
 }
 
 .align-y-top {
   -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
   align-self: flex-start;
 }
 
 .align-y-bottom {
   -webkit-align-self: flex-end;
-  -ms-flex-item-align: end;
   align-self: flex-end;
 }
 

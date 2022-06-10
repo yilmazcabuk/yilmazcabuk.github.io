@@ -1,12 +1,12 @@
-/* =================================================================== 
+/* ===================================================================
  *
  *  Epitome Vendor/Third Party CSS
- *  Template Ver. 1.0.0 
+ *  Template Ver. 1.0.0
  *  04-22-2019
  *  ------------------------------------------------------------------
  *
  *  TOC:
- *  # animate on scroll 
+ *  # animate on scroll
  *  # slick slider
  *  # PhotoSwipe main CSS by Dmitry Semenov
  *  # PhotoSwipe Skin
@@ -14,7 +14,7 @@
  * =================================================================== */
 
 /* ===================================================================
- * # animate on scroll 
+ * # animate on scroll
  * https://michalsnik.github.io/aos/
  * ------------------------------------------------------------------- */
 [data-aos][data-aos][data-aos-duration="50"],
@@ -1207,7 +1207,6 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos] {
 
 .slick-list.dragging {
   cursor: pointer;
-  cursor: hand;
 }
 
 .slick-slider .slick-track,
@@ -1285,7 +1284,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos] {
 
 /* ===================================================================
  * # PhotoSwipe main CSS by Dmitry Semenov
- *   photoswipe.com | MIT license 
+ *   photoswipe.com | MIT license
  * ------------------------------------------------------------------- */
 
 /*
@@ -1547,9 +1546,9 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos] {
   border: 0;
 }
 
-/* 
-pswp__ui--over-close class it added when mouse is 
-over element that should close gallery 
+/*
+pswp__ui--over-close class it added when mouse is
+over element that should close gallery
 */
 .pswp__ui--over-close .pswp__button--close {
   opacity: 1;
@@ -1908,8 +1907,8 @@ a.pswp__share--download:hover {
 }
 
 .pswp--css_animation .pswp__preloader__cut {
-  /* 
-        The idea of animating inner circle is based on Polymer ("material") loading indicator 
+  /*
+        The idea of animating inner circle is based on Polymer ("material") loading indicator
          by Keanu Lee https://blog.keanulee.com/2014/10/20/the-tale-of-three-spinners.html
       */
   position: relative;
