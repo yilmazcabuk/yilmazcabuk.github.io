@@ -65,12 +65,12 @@
         </ul>
 
         <ul class="header-social">
-          <li>
+          <li class="header-social-item header-social-twitter">
             <a href="https://twitter.com/ylmzcbk"
               ><i class="fab fa-twitter" aria-hidden="true"></i> Twitter</a
             >
           </li>
-          <li>
+          <li class="header-social-item header-social-instagram">
             <a href="https://www.instagram.com/ylmzcbk/"
               ><i class="fab fa-instagram" aria-hidden="true"></i> Instagram</a
             >
@@ -161,7 +161,9 @@
             >
           </div>
           <div class="column large-half tab-full" data-aos="fade-up">
-            <a href="#0" class="btn btn--primary full-width">Download CV</a>
+            <a href="#0" class="btn btn--primary full-width" download
+              >Download CV</a
+            >
           </div>
         </div>
       </div>
@@ -181,13 +183,13 @@
                 <span class="timeline__icon timeline__icon--work"></span>
               </div>
 
-              <div class="timeline__block">
+              <article class="timeline__block">
                 <div class="timeline__bullet"></div>
-                <div class="timeline__header">
+                <header class="timeline__header">
                   <p class="timeline__timeframe">July 2018 - Present</p>
                   <h3 class="item-title">Awesome Studio</h3>
                   <h5>Lead Designer</h5>
-                </div>
+                </header>
                 <div class="timeline__desc">
                   <p>
                     Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in
@@ -197,15 +199,15 @@
                     incididunt amet est occaecat nisi.
                   </p>
                 </div>
-              </div>
+              </article>
 
-              <div class="timeline__block">
+              <article class="timeline__block">
                 <div class="timeline__bullet"></div>
-                <div class="timeline__header">
+                <header class="timeline__header">
                   <p class="timeline__timeframe">July 2017 - June 2018</p>
                   <h3 class="item-title">Super Cool Agency</h3>
                   <h5>Frontend Developer</h5>
-                </div>
+                </header>
                 <div class="timeline__desc">
                   <p>
                     Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in
@@ -215,15 +217,15 @@
                     incididunt amet est occaecat nisi.
                   </p>
                 </div>
-              </div>
+              </article>
 
-              <div class="timeline__block">
+              <article class="timeline__block">
                 <div class="timeline__bullet"></div>
-                <div class="timeline__header">
+                <header class="timeline__header">
                   <p class="timeline__timeframe">March 2016 - June 2017</p>
                   <h3 class="item-title">Epic Design Studio</h3>
                   <h5>Frontend Developer</h5>
-                </div>
+                </header>
                 <div class="timeline__desc">
                   <p>
                     Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in
@@ -233,7 +235,7 @@
                     incididunt amet est occaecat nisi.
                   </p>
                 </div>
-              </div>
+              </article>
             </div>
           </div>
 
@@ -243,13 +245,13 @@
                 <span class="timeline__icon timeline__icon--education"></span>
               </div>
 
-              <div class="timeline__block">
+              <article class="timeline__block">
                 <div class="timeline__bullet"></div>
-                <div class="timeline__header">
+                <header class="timeline__header">
                   <p class="timeline__timeframe">July 2011 - June 2015</p>
                   <h3 class="item-title">University of Life</h3>
                   <h5>Master Degree</h5>
-                </div>
+                </header>
                 <div class="timeline__desc">
                   <p>
                     Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in
@@ -259,15 +261,15 @@
                     incididunt amet est occaecat nisi.
                   </p>
                 </div>
-              </div>
+              </article>
 
-              <div class="timeline__block">
+              <article class="timeline__block">
                 <div class="timeline__bullet"></div>
-                <div class="timeline__header">
+                <header class="timeline__header">
                   <p class="timeline__timeframe">July 2009 - June 2011</p>
                   <h3 class="item-title">State Design University</h3>
                   <h5>Bachelor Degree</h5>
-                </div>
+                </header>
                 <div class="timeline__desc">
                   <p>
                     Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in
@@ -277,15 +279,15 @@
                     incididunt amet est occaecat nisi.
                   </p>
                 </div>
-              </div>
+              </article>
 
-              <div class="timeline__block">
+              <article class="timeline__block">
                 <div class="timeline__bullet"></div>
-                <div class="timeline__header">
+                <header class="timeline__header">
                   <p class="timeline__timeframe">July 2005 - June 2009</p>
                   <h3 class="item-title">School of Hard Knocks</h3>
                   <h5>Bachelor Degree</h5>
-                </div>
+                </header>
                 <div class="timeline__desc">
                   <p>
                     Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in
@@ -295,7 +297,7 @@
                     incididunt amet est occaecat nisi.
                   </p>
                 </div>
-              </div>
+              </article>
             </div>
           </div>
         </div>
@@ -406,7 +408,7 @@
     <section class="s-cta ss-dark">
       <div class="row heading-block heading-block--center" data-aos="fade-up">
         <div class="column large-full">
-          <h2 class="section-desc">Need a great reliable web hosting?</h2>
+          <h2 class="section-desc">Would you like to work with me?</h2>
         </div>
       </div>
       <!-- end heading-block -->
@@ -414,20 +416,12 @@
       <div class="row cta-content" data-aos="fade-up">
         <div class="column large-full">
           <p>
-            We highly recommend
-            <a href="https://www.dreamhost.com/r.cgi?287326">DreamHost</a>.
-            Powerful web and Wordpress hosting. Guaranteed. Starting at $2.95
-            per month.
+            If what you have seen so far is enough to convince you, contact me!
           </p>
 
-          <a
-            href="https://www.dreamhost.com/r.cgi?287326"
-            class="btn full-width"
-            >Get Started</a
-          >
+          <a href="#contact" class="btn full-width smoothscroll">Contact</a>
         </div>
       </div>
-      <!-- end ad-content -->
     </section>
     <!-- end s-cta -->
 
@@ -780,7 +774,9 @@
         <div class="column large-full">
           <p class="contact-email">
             <a href="mailto:yilmazcabuk@protonmail.com"
-              >yilmazcabuk @protonmail.com</a
+              >yilmazcabuk
+              <wbr />
+              @protonmail.com</a
             >
           </p>
 
@@ -823,7 +819,7 @@
           <span>© Copyright Valyriapps 2022</span>
           <span
             >Design by
-            <a href="https://www.styleshout.com/">Valyriapps</a></span
+            <a class="smoothscroll" href="#intro">Valyriapps</a></span
           >
         </div>
 
