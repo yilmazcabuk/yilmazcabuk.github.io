@@ -8,7 +8,7 @@
  *  TOC:
  *  # imports
  *  # normalize
- *  # basic/base setup styles
+ *  # basic/base setup css
  *	# grid v2
  *		## medium screen devices
  *		## tablets
@@ -155,7 +155,7 @@ img {
  * ## forms
  * ------------------------------------------------------------------- */
 
-/* 1. Change the font styles in all browsers.
+/* 1. Change the font css in all browsers.
  * 2. Remove the margin in Firefox and Safari. */
 button,
 input,
@@ -201,7 +201,7 @@ button::-moz-focus-inner,
   padding: 0;
 }
 
-/* Restore the focus styles unset by the previous rule. */
+/* Restore the focus css unset by the previous rule. */
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
@@ -299,7 +299,7 @@ template {
 }
 
 /* ===================================================================
- * # basic/base setup styles
+ * # basic/base setup css
  *
  * ------------------------------------------------------------------- */
 html {

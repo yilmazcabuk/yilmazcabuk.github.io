@@ -1,8 +1,31 @@
+@import "reset.css";
+
 :root {
   --color-primary: #fe218b;
   --color-secondary: #17cf7f;
   --color-tertiary: #21b0fe;
   --link-color: #ffffff7f;
+  --twitter-blue: #00aced;
+  --instagram-red: #e1306c;
+  --github-white: #ffffff;
+}
+
+::selection {
+  color: white;
+  background: var(--color-primary);
+}
+
+::-moz-selection {
+  color: white;
+  background: var(--color-primary);
+}
+
+p {
+  transition: ease-in-out 0.3s;
+}
+
+p:hover {
+  color: var(--color-tertiary);
 }
 
 html {
@@ -73,7 +96,7 @@ a:active {
 }
 
 /* ===================================================================
- * # typography & general theme styles
+ * # typography & general theme css
  *
  * ------------------------------------------------------------------- */
 h1,
@@ -197,6 +220,10 @@ p.lead {
   line-height: 1.833;
   margin-bottom: 3.6rem;
   color: #000000;
+}
+
+p.lead:hover {
+  color: var(--color-secondary);
 }
 
 @media screen and (max-width: 1200px) {
@@ -507,7 +534,7 @@ form,
 }
 
 /* -------------------------------------------------------------------
- * ## pace.js styles - minimal
+ * ## pace.js css - minimal
  * ------------------------------------------------------------------- */
 .pace {
   pointer-events: none;
@@ -630,6 +657,16 @@ select {
   background: transparent;
   border-bottom: 1px solid #c3c3c3;
   transition: all 0.3s ease-in-out;
+}
+
+.main-title {
+  max-width: 15ch;
+  min-height: 20vh;
+  transition: ease-in-out 0.3s;
+}
+
+.main-title:hover {
+  color: var(--color-tertiary);
 }
 
 .ss-custom-select {
@@ -762,7 +799,7 @@ label > input[type="radio"] {
 }
 
 /* -------------------------------------------------------------------
- * ## Change Autocomplete styles in Chrome
+ * ## Change Autocomplete css in Chrome
  * ------------------------------------------------------------------- */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
@@ -902,7 +939,7 @@ input::-moz-focus-inner {
  * ------------------------------------------------------------------- */
 
 /* -------------------------------------------------------------------
- * ## additional typo styles
+ * ## additional typo css
  * ------------------------------------------------------------------- */
 
 /* drop cap
@@ -1490,6 +1527,29 @@ input::-moz-focus-inner {
   color: var(--color-primary);
 }
 
+.item-title__service {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 3.5rem;
+  font-weight: 500;
+  line-height: 1.222;
+  margin-top: 0;
+  color: #000000;
+  transition: color 0.3s ease-in-out;
+}
+
+.item-title__service:hover {
+  color: var(--color-secondary);
+}
+
+.item-role:hover {
+  color: var(--color-secondary);
+}
+
+.item-content {
+  font-size: 1.75rem;
+  text-align: justify-all;
+}
+
 .ss-dark .section-heading,
 .ss-dark .section-desc {
   color: #ffffff;
@@ -1507,9 +1567,95 @@ h5:hover {
   color: var(--color-secondary);
 }
 
+.skill-icons {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3.2rem;
+  gap: 4rem;
+}
+
+.skill-icons .fa-brands {
+  font-size: 6rem;
+  transition: ease-in-out 0.3s;
+}
+
+.fa-react:hover {
+  color: #00d8ff;
+}
+
+.fa-angular:hover {
+  color: #c42f2f;
+}
+
+.fa-vuejs:hover {
+  color: #41b883;
+}
+
+.fa-node-js:hover {
+  color: #00b300;
+}
+
+.fa-html5:hover {
+  color: #e34f26;
+}
+
+.fa-css3-alt:hover {
+  color: #ff0000;
+}
+
+.fa-js:hover {
+  color: #f0db4f;
+}
+
+.fa-sass:hover {
+  color: #cc6699;
+}
+
+.fa-wordpress:hover {
+  color: #00a0d8;
+}
+
+.fa-python:hover {
+  color: #6699cc;
+}
+
+.fa-android:hover {
+  color: #a4c639;
+}
+
+.fa-java:hover {
+  color: #b07219;
+}
+
+.fa-laptop-code:hover {
+  color: #f9a825;
+}
+
+.fa-discord:hover {
+  color: #7289da;
+}
+
+.fa-camera:hover {
+  color: #ff00ff;
+}
+
+.fa-windows:hover {
+  color: #00bcd4;
+}
+
+.fa-music:hover {
+  color: #ff00ff;
+}
+
+.fa-c:hover {
+  color: #00bcd4;
+}
 /* -------------------------------------------------------------------
  * responsive:
- * common and reusable styles
+ * common and reusable css
  * ------------------------------------------------------------------- */
 @media screen and (max-width: 1200px) {
   .item-title {
@@ -1565,6 +1711,10 @@ h5:hover {
   .item-title {
     font-size: 2.8rem;
   }
+
+  .skill-icons .fab {
+    font-size: 4rem;
+  }
 }
 
 /* ===================================================================
@@ -1611,9 +1761,8 @@ h5:hover {
 }
 
 .header-logo img {
-  width: 108px;
-  height: 108px;
-  margin: 0;
+  width: 50%;
+  height: 100%;
 }
 
 /* -------------------------------------------------------------------
@@ -1691,11 +1840,15 @@ h5:hover {
 }
 
 .header-social-twitter a:hover {
-  color: #00aced;
+  color: var(--twitter-blue);
 }
 
 .header-social-instagram a:hover {
-  color: #e1306c;
+  color: var(--instagram-red);
+}
+
+.header-social-github a:hover {
+  color: var(--github-white);
 }
 
 /* -------------------------------------------------------------------
@@ -1820,11 +1973,11 @@ h5:hover {
 
   .header-nav-wrap {
     display: none;
-    text-align: left;
+    text-align: center;
     height: auto;
     width: 100%;
     background-color: #050505;
-    padding: 120px 44px 64px;
+    padding: 12rem 4rem 6rem;
   }
 
   .header-nav-wrap .header-main-nav {
@@ -2158,7 +2311,8 @@ h5:hover {
   -webkit-columns: 2 360px;
   -moz-columns: 2 360px;
   columns: 2 360px;
-  column-gap: 64px;
+  column-gap: 72px;
+  text-align: justify;
 }
 
 .about-me__buttons {
@@ -2196,7 +2350,7 @@ h5:hover {
 .timeline::before {
   content: "";
   display: block;
-  width: 1px;
+  width: 0.1rem;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.12);
   position: absolute;
@@ -2208,11 +2362,20 @@ h5:hover {
   content: "";
   display: block;
   width: 5.6rem;
-  height: 1px;
+  height: 0.1rem;
   background-color: rgba(0, 0, 0, 0.12);
   position: absolute;
-  left: 1px;
+  left: 0.1rem;
   top: 0;
+}
+
+.timeline__desc p {
+  text-align: justify;
+  transition: ease-in-out 0.3s;
+}
+
+.timeline__desc:hover p {
+  color: var(--color-tertiary);
 }
 
 .timeline__icon-wrap {
@@ -2255,6 +2418,10 @@ h5:hover {
   min-height: 35.6rem;
 }
 
+.timeline__block:hover .timeline__bullet {
+  background-color: var(--color-primary);
+}
+
 .timeline .timeline__block:last-child {
   padding-bottom: 0;
 }
@@ -2262,17 +2429,13 @@ h5:hover {
 .timeline__bullet {
   content: "";
   display: block;
-  width: 3px;
+  width: 0.3rem;
   height: 4.8rem;
   background-color: #000000;
   position: absolute;
-  left: -1px;
-  top: 8px;
+  left: -0.1rem;
+  top: 3rem;
   transition: ease-in-out 0.3s;
-}
-
-.timeline__bullet:hover {
-  background-color: var(--color-secondary);
 }
 
 .timeline__header {
@@ -2308,6 +2471,10 @@ h5:hover {
   font-weight: 400;
   line-height: 1.333;
   margin-top: 0;
+}
+
+.typed {
+  color: var(--color-secondary);
 }
 
 /* -------------------------------------------------------------------
@@ -2527,6 +2694,7 @@ h5:hover {
   margin-top: 8.8rem;
   counter-reset: ctr;
   position: relative;
+  text-align: justify;
 }
 
 .services-list .item-service {
@@ -2536,7 +2704,7 @@ h5:hover {
 }
 
 .services-list .item-service__content {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
   padding-top: 3.6rem;
 }
 
@@ -2544,7 +2712,7 @@ h5:hover {
   display: block;
   content: counter(ctr, decimal-leading-zero) ".";
   counter-increment: ctr;
-  margin-bottom: 4.8rem;
+  margin-bottom: 5rem;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 8rem;
@@ -2640,6 +2808,11 @@ h5:hover {
 
 .s-cta .section-desc {
   margin-top: 0;
+  transition: ease-in-out 0.3s;
+}
+
+.section-desc:hover {
+  color: var(--color-secondary);
 }
 
 .cta-content {
@@ -2695,6 +2868,68 @@ h5:hover {
   background-color: #ffffff;
 }
 
+.works {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.work-info {
+  min-height: 35rem;
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  border: 0.2rem solid black;
+  transition: ease-in-out 0.3s;
+}
+
+.work-info:hover {
+  border: 0.2rem solid var(--color-primary);
+  box-shadow: 0 0 0.75rem 0.3rem var(--color-primary);
+}
+
+.work-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+  margin-top: 0.8rem;
+  margin-bottom: 1.6rem;
+  transition: ease-in-out 0.3s;
+}
+
+.work-title a {
+  color: black;
+}
+
+.work-title:hover a {
+  color: var(--color-secondary);
+}
+
+.work-desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3.2rem;
+}
+
+.work-technologies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.work-technologies i {
+  font-size: 3rem;
+  transition: ease-in-out 0.3s;
+}
+
 .masonry-wrap {
   width: 89%;
   max-width: 1400px;
@@ -2717,8 +2952,12 @@ h5:hover {
 .item-folio {
   text-align: center;
   padding: 36px;
-  background: #efefef;
+  background: #acc8e5;
   transition: 0.5s ease-in-out;
+}
+
+.item-folio:hover {
+  background: #fe94c8;
 }
 
 /* item-folio thumb
@@ -2988,6 +3227,10 @@ h5:hover {
     padding: 0;
     margin-bottom: 3.2rem;
   }
+
+  .works {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /* ===================================================================
@@ -3105,6 +3348,30 @@ h5:hover {
   font-size: 1.8rem;
   line-height: 1.333;
   color: rgba(0, 0, 0, 0.7);
+}
+
+.testimonials__cite__name {
+  transition: ease-in-out 0.3s;
+}
+
+.testimonials__cite__name:hover {
+  color: var(--color-secondary);
+}
+
+.testimonials__cite__job {
+  transition: ease-in-out 0.3s;
+}
+
+.testimonials__cite__job:hover {
+  color: var(--color-tertiary);
+}
+
+.testimonials__comment {
+  transition: ease-in-out 0.5s;
+}
+
+.testimonials__comment:hover {
+  color: var(--color-primary);
 }
 
 /* -------------------------------------------------------------------
@@ -3250,6 +3517,7 @@ h5:hover {
   line-height: 1;
   margin: 5.6rem 0 8rem;
   word-wrap: break-word;
+  color: var(--color-primary);
 }
 
 .contact-infos {
@@ -3470,7 +3738,7 @@ footer a:visited {
   display: block;
   width: 1px;
   height: 100px;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.75);
   position: absolute;
   top: -115px;
   left: 50%;
@@ -3480,32 +3748,32 @@ footer a:visited {
   content: "back to top";
   display: block;
   float: left;
-  width: 120px;
+  width: 12rem;
   font-size: 1.2rem;
-  line-height: 30px;
+  line-height: 3rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.75);
   transition: all 0.5s;
   transform: rotate(-90deg);
   -webkit-transform-origin: left bottom;
   transform-origin: left bottom;
   position: absolute;
   left: calc(30px + 15px);
-  top: -165px;
+  top: -16.5rem;
 }
 
 /* -------------------------------------------------------------------
  * responsive:
  * footer
  * ------------------------------------------------------------------- */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 120rem) {
   .ss-go-top {
     right: 3rem;
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 90rem) {
   .ss-go-top {
     right: 0;
   }
@@ -3516,7 +3784,7 @@ footer a:visited {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 60rem) {
   .ss-copyright {
     margin-top: 9rem;
     padding: 0;
@@ -3537,7 +3805,7 @@ footer a:visited {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 40rem) {
   .ss-copyright span {
     font-size: 13px;
   }
